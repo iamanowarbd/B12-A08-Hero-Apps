@@ -9,7 +9,7 @@ import Facebook from '../assets/fb-w.svg'
 const Footer = () => {
     return (
         <>
-            <footer className="footer items-center sm:footer-horizontal bg-[#001931] text-neutral-content p-10">
+            <footer className="footer items-center sm:footer-horizontal bg-[#001931] text-neutral-content p-5">
                 <div className='max-w-[1440px] w-full mx-auto flex flex-col md:flex-row flex-wrap items-center justify-between gap-2 md:gap-10'>
                     <aside>
                         <Link to='/' className="pl-5 pr-5 flex items-center text-xl">
@@ -36,7 +36,7 @@ const Footer = () => {
 
             <footer className="footer-2 bg-[#001931]  text-base-content border-base-[#E5E7EB] border-t px-10 py-4 sm:footer-horizontal footer-center">
                 <aside>
-                    <p className='flex items-center justify-center text-white'>Copyright © {new Date().getFullYear()} - All right reserved by ACME Industries Ltd</p>
+                    <p className='flex items-center justify-center text-white'>Copyright © {new Date().getFullYear()} - All right reserved</p>
                 </aside>
 
             </footer>

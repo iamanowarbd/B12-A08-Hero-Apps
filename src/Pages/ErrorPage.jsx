@@ -12,8 +12,8 @@ const ErrorPage = () => {
             <div>
                 {error.message}
             </div>
-            <div>
-                <img className='items-center justify-center' src={Error} alt="" />
+            <div className='items-center justify-center'>
+                <img src={Error} alt="" />
             </div>
             <Footer />
         </>
