@@ -3,6 +3,7 @@ import { Link, NavLink } from 'react-router';
 import Logo from '../assets/logo.png';
 import GitLogo from '../assets/gitwhite.svg'
 
+
 const Navbar = () => {
     
     const navLinkClass = ({ isActive }) =>
@@ -15,7 +16,7 @@ const Navbar = () => {
         <>
             <ul className="menu menu-horizontal px-1 sm: ">
                 <li><NavLink to="/" className={navLinkClass}>Home</NavLink></li>
-                <li><NavLink to="/software" className={navLinkClass}>Apps</NavLink></li>
+                <li><NavLink to='/software' className={navLinkClass}>Apps</NavLink></li>
                 <li><NavLink to="/install" className={navLinkClass}>Installation</NavLink></li>
             </ul>
         </>
@@ -23,6 +24,7 @@ const Navbar = () => {
 
     return (
         <div className="navbar bg-base-100 shadow-sm">
+            <div className='flex items-center justify-between w-[1440px] mx-auto'>
             <div className="navbar-start">
                 <div className="dropdown">
                     <div tabIndex={0} role="button" className="btn btn-ghost lg:hidden">
@@ -54,6 +56,7 @@ const Navbar = () => {
                     <div>Contribute</div>
                 </a>
             </div>
+        </div>
         </div>
     );
 };
