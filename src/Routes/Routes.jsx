@@ -4,6 +4,9 @@ import Home from "../Pages/Home";
 import Software from "../Pages/Software";
 import MainLayout from "../Layouts/MainLayout";
 import ErrorPage from "../Pages/ErrorPage";
+import Install from "../Pages/Install";
+import AllAppsData from "../../public/AllAppsData.json";
+
 
 /** named export **/
 
@@ -12,14 +15,19 @@ export const router = createBrowserRouter([
     path: '/',
     element: <MainLayout />,
     errorElement: <ErrorPage />,
+    hydrateFallbackElement: <p>Loading..</p>,
     children: [
       {
         index: true,
-        element: <Home />,
+        Component: Home,
+        loader: ()=> fetch('/AllAppsData.json'),
       },
       {
         path: '/Apps',
         element: <Software />,
+      },
+      { path: '/Installation',
+        element: <Install />,
       },
     ]
   },

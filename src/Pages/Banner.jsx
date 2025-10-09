@@ -8,13 +8,13 @@ const Banner = () => {
         <>
             <div className='m-8 justify-center items-center'>
                 <div>
-                    <h1 className='text-[#001931] text-7xl font-bold text-center'>We Build
+                    <h1 className='text-[#001931] text-7xl font-bold text-center sm:text-4xl'>We Build
                         <span className="bg-gradient-to-tr from-[#632EE3] to-[#9F62F2] bg-clip-text text-transparent">
                             <br />  Productive <span></span>
                         </span>
                         Apps
                     </h1>
-                    <p className='pt-10 text-center'> At HERO.IO , we craft innovative apps designed to make everyday life simpler, smarter, and more exciting.<br />Our goal is to turn your ideas into digital experiences that truly make an impact.</p>
+                    <p className='text-[#627382] text-base pt-10 text-center'> At HERO.IO , we craft innovative apps designed to make everyday life simpler, smarter, and more exciting.<br />Our goal is to turn your ideas into digital experiences that truly make an impact.</p>
                 </div>
                 <div className='p-10 flex gap-5 justify-center items-center'>
                     <img src={GooglePlay} alt="" />
@@ -22,15 +22,15 @@ const Banner = () => {
                 </div>
 
             </div>
-            <div className='flex items-center justify-center'>
-                <img className='max-w-3xl md:mx-auto' src={Hero} alt="" />
+            <div className='flex items-center justify-center md:mx-auto sm:max-w-xl'>
+                <img className='max-w-3xl md:mx-auto sm:max-w-xl' src={Hero} alt="" />
             </div>
 
             <div className='text-center items-center justify-center bg-gradient-to-tr from-[#632EE3] to-[#9F62F2] text-white'>
                 <div>
-                    <h2 className='pt-10 text-4xl font-bold'>Trusted by Millions, Built for You</h2>
+                    <h2 className='pt-10 text-4xl font-bold sm:text-2xl '>Trusted by Millions, Built for You</h2>
                 </div>
-                <div className='flex items-center justify-center text-center pb-5'>
+                <div className=' items-center justify-center text-center pb-5 sm:flex flex-row text-2xl'>
                     <div className='p-10'>
                         <p className='text-base'>
                             Total Downloads
