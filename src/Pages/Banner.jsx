@@ -23,7 +23,7 @@ const Banner = () => {
 
             </div>
             <div className='flex items-center justify-center md:mx-auto sm:max-w-xl'>
-                <img className='max-w-3xl md:mx-auto sm:max-w-xl' src={Hero} alt="" />
+                <img className='w-full max-w-3xl md:mx-auto sm:max-w-xl' src={Hero} alt="" />
             </div>
 
             <div className='text-center items-center justify-center bg-gradient-to-tr from-[#632EE3] to-[#9F62F2] text-white'>
