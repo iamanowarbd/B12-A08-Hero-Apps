@@ -6,6 +6,7 @@ import MainLayout from "../Layouts/MainLayout";
 import ErrorPage from "../Pages/ErrorPage";
 import Install from "../Pages/Install";
 import AllAppsData from "../../public/AllAppsData.json";
+import SoftwareDetails from "../Pages/SoftwareDetails";
 
 
 /** named export **/
@@ -20,15 +21,21 @@ export const router = createBrowserRouter([
       {
         index: true,
         Component: Home,
-        loader: ()=> fetch('/AllAppsData.json'),
+        loader: () => fetch('/AllAppsData.json'),
       },
       {
         path: '/Apps',
         element: <Software />,
-        loader: ()=> fetch('/AllAppsData.json'),
+        loader: () => fetch('/AllAppsData.json'),
       },
-      { path: '/Installation',
+      {
+        path: '/Installation',
         element: <Install />,
+      },
+      {
+        path: '/Apps/:id',
+        element: <SoftwareDetails />,
+        loader: () => fetch('/AllAppsData.json'),
       },
     ]
   },

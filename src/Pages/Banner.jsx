@@ -1,14 +1,15 @@
 import React from 'react';
-import GooglePlay from '../assets/go-pl.svg'
-import AppStore from '../assets/ap-st.svg'
+import GooglePlay from '../assets/play.svg'
+import AppStore from '../assets/app.svg'
 import Hero from '../assets/hero.png'
 
 const Banner = () => {
     return (
         <>
-            <div className='m-8 justify-center items-center'>
+        <div className='bg-[#D2D2D2]'>
+            <div className=' justify-center items-center'>
                 <div>
-                    <h1 className='text-[#001931] text-7xl font-bold text-center sm:text-4xl'>We Build
+                    <h1 className='pt-8 text-[#001931] text-7xl font-bold text-center sm:text-4xl'>We Build
                         <span className="bg-gradient-to-tr from-[#632EE3] to-[#9F62F2] bg-clip-text text-transparent">
                             <br />  Productive <span></span>
                         </span>
@@ -16,9 +17,22 @@ const Banner = () => {
                     </h1>
                     <p className='text-[#627382] text-base pt-10 text-center'> At HERO.IO , we craft innovative apps designed to make everyday life simpler, smarter, and more exciting.<br />Our goal is to turn your ideas into digital experiences that truly make an impact.</p>
                 </div>
-                <div className='p-10 flex gap-5 justify-center items-center'>
-                    <img src={GooglePlay} alt="" />
-                    <img src={AppStore} alt="" />
+                <div>
+                    <div className="p-8 flex flex-col md:flex-row items-center justify-center gap-4">
+          <button className="p-2  bg-white rounded-lg text-xl font-semibold hover:bg-[#D2D2D2] shadow-md hover:-translate-y-1 transition-all duration-200 ease-in-out text-gray-800">
+            <a className="flex items-center gap-3" href="#" target="_blank" rel="noopener noreferrer">
+            <img src={GooglePlay} alt="Google Play Store" className="w-8 h-8" />
+            <span>Google Play</span>
+          </a>
+          </button>
+          <button className="p-2 bg-white rounded-lg text-xl font-semibold
+          hover:bg-[#D2D2D2] shadow-md hover:-translate-y-1 transition-all duration-200 ease-in-out text-gray-800">
+            <a className="flex items-center gap-3" href="#" target="_blank" rel="noopener noreferrer">
+            <img src={AppStore} alt="Apple App Store" className="w-8 h-8" />
+            <span>App Store</span>
+          </a>
+          </button>
+        </div>
                 </div>
 
             </div>
@@ -65,6 +79,7 @@ const Banner = () => {
                         </p>
                     </div>
                 </div>
+            </div>
             </div>
         </>
     );

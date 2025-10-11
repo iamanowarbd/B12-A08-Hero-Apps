@@ -17,7 +17,7 @@ const Navbar = () => {
             <ul className="menu menu-horizontal px-1 sm: ">
                 <li><NavLink to="/" className={navLinkClass}>Home</NavLink></li>
                 <li><NavLink to='/Apps' className={navLinkClass}>Apps</NavLink></li>
-                <li><NavLink to="/install" className={navLinkClass}>Installation</NavLink></li>
+                <li><NavLink to="/installation" className={navLinkClass}>Installation</NavLink></li>
             </ul>
         </>
     );
